@@ -7,46 +7,46 @@ workflows:
         XCODE_WORKSPACE: "Runner.xcworkspace"
         XCODE_SCHEME: "Runner"
         APP_STORE_CONNECT_ISSUER_ID: 846c21ba-7a70-48b8-bc87-ac157ac3643f
-        APP_STORE_CONNECT_KEY_IDENTIFIER: WHM4WT35P2
+        APP_STORE_CONNECT_KEY_IDENTIFIER: Q6M5G97MV4
         APP_STORE_CONNECT_PRIVATE_KEY: |-
          -----BEGIN PRIVATE KEY-----
-         MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQgbxydrAQU+kWwTuaB
-         uWpCyZ1BauZU9WmYhVZy1rfEfk6gCgYIKoZIzj0DAQehRANCAARTXaOHyBOr/VgX
-         zsMgEkPOHAE4YqQXk3IxiIRIaq1kLhnquUrcSy/ByKm6vZttoPRGP9pmyXxtLzBo
-         2L5Wo/R3
+         MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQgTqowByP1S2SByMgM
+         2SJVCkTwL4LsESL8zmE2VdYv2CGgCgYIKoZIzj0DAQehRANCAARcY2wix0Qwdd1m
+         AKd03UZgBUHYtPRI9VxvCINQ0qAk0M7WyeKQ6+JKDPr/ttJNXYYJUGgB2F6ZJZZk
+         OlI5kSfI
          -----END PRIVATE KEY-----
 
         CERTIFICATE_PRIVATE_KEY: |-
          -----BEGIN RSA PRIVATE KEY-----
-         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
+         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
          -----END RSA PRIVATE KEY-----
          
 
-        BUNDLE_ID: "com.cruzeirocolorido.app"
+        BUNDLE_ID: "app.cruzeirocolorico.com"
       flutter: stable
       xcode: latest
       cocoapods: default
@@ -72,7 +72,7 @@ workflows:
       - name: Flutter build ipa and automatic versioning
         script: |
           flutter build ipa --release \
-          --build-name=2.0.1 \
+          --build-name=1.0.0 \
           --build-number=$(($(app-store-connect get-latest-testflight-build-number "$APP_STORE_ID") + 1)) \
           --export-options-plist=/Users/builder/export_options.plist
     artifacts:
