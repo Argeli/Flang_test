@@ -11,42 +11,12 @@ workflows:
         APP_STORE_CONNECT_PRIVATE_KEY: |-
          -----BEGIN PRIVATE KEY-----
          MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQgTqowByP1S2SByMgM
-         2SJVCkTwL4LsESL8zmE2VdYv2CGgCgYIKoZIzj0DAQehRANCAARcY2wix0Qwdd1m
+         SJVCkTwL4LsESL8zmE2VdYv2CGgCgYIKoZIzj0DAQehRANCAARcY2wix0Qwdd1m
          AKd03UZgBUHYtPRI9VxvCINQ0qAk0M7WyeKQ6+JKDPr/ttJNXYYJUGgB2F6ZJZZk
          OlI5kSfI
          -----END PRIVATE KEY-----
 
-        CERTIFICATE_PRIVATE_KEY: |-
-         -----BEGIN RSA PRIVATE KEY-----
-         MIIEogIBAAKCAQEAp/zb1dDrw3ctPbHIVcHfodETDMRkLlvhU7Yzkf6GaerCJTWK
-         ZRswQuyEwWqG3fc6rZSMahoH1bpv78fJZ84fkr1btEGeR91KtajY/ua9ipZtqNO2
-         Wh3iZOa9PLMYvLiTbSAu/CowP3nwOS0S0AuXKtzuGCc5gey+zTruUYSA0YKyFQ8U
-         rvzvwx8ZZY/vaPX+XgcCPbUUB2xy0qSPzGQz7LoztQiW8cmJ7cuOS1KK0H4UVgbU
-         Ncs/4ByO9uBKulFZRYVuZgwJiLvTFzHDt8LVpFDOVblak0YSzI8qwp6V4A1bIYbB
-         pDrMbhQV1V3BvRiEie2J3C3lP9cFVK52nXQ4gQIDAQABAoIBAFV4EWF4KnwI5ru8
-         +HCpc16hQU/9m/r6RGqTCSn+leTNzHmiBAftDWD/dYvy5yuH3hLywX46QEI92TXm
-         MFLgTLAcJ8xOlnl53ckPX1hRjZ41axW6ocy357furdl0ReG/B0M+XKlvzZx+Lfrp
-         M+kl/IOSZJFlY5z3FxzUHuzava/aO7Ti0nQgLxRVWGJmJ4Gp4MH0Z0ms87m9sAZ6
-         tvTxgIZ2oUa6HrYRSyhoHyJdeJEB13+q5ameU/YJ0iW8ruV9VQJmwNRqH57hrls1
-         wJ9cOSE8AwTE2foRMAlAQpQ6GiQsaMImM9LGQU8mGT7sScnT2YsPeNbLsju7x6vM
-         tq8BnQECgYEA3oqzhVJ4yRQhMaNInfeyn4E8NqbxFbv/cQvVJhPEtn1d3MWKLgej
-         TE2l86YJCNVmLD+OJ5rM85mCZyY7DFr1nc59fkDRypRL/x/k22wPqgETQE97Rph/
-         hNYhe7BqkA2WFl1aMbS7XnSEQ+sfWi/Vm9ABiuUnxveBlvcrVPupNLMCgYEAwT50
-         EmEKg6OoEJr7FLL46RcaFFNLI1dUnAhTHi1BuHXQ+pRhn5PK1nzdzqZLwf4VoVHo
-         axjAZ6K/7XgWGUIHQpd+VOlxXtMDoGWUbsRaiYHpQN/bE/zmqUakImJSIZjtGK10
-         3puFK/fI/9GiFZHyi58SyJ8I/0UIQtJM0RTUv/sCgYAN5uA8DeDZvtYsAaVBqP2R
-         lUMrrtYUo3/bkf+ot0dslvxMFFMDeRqsY5VgWRjrYllVnkrFEpiHBynsQ6kgpnX9
-         e66/OlFgtE7jCx0C0AdSeWq4c76htFkS9UV2MpkVkqOzlfVScZXa2rCAhamZuq8/
-         YokWIiaP+VoxEhO05Vu2nQKBgAatuuM7uVpNWKyiPpU7jkC4DK2xJ0KkbQcrfnvn
-         goL2h29xm2IhgHwjOqM+uhWNS4AUzZyN8XBjfpCdet4KmyehBru2ibWGQ3TSreua
-         G6ru83nLgs3RCsPE7j1F+qKwn1kf/Y8H/vVDDg5RV3G5ZpGOwN5wKKZx41Qz4nXD
-         a4rrAoGAZulfsJjxsnUY1rrAcyw5uzFxbkV+x1y+ibZPCTpSi15WUAKGgVxrq3+m
-         /4B7938eBw9eaevsiXyL1TJcTwiKOTGPHcpWGaeS2+d8kohYRad/d8UqsPlxV0o+
-         ENOVTeX48pdRiX/5V73P4egYNfP7bE8sgEP1teDBmZXH7zQdab4=
-         -----END RSA PRIVATE KEY-----
-         
-
-        BUNDLE_ID: "app.cruzeirocolorico.com"
+        BUNDLE_ID: "com.cruzeirocolorido.app"
       flutter: stable
       xcode: latest
       cocoapods: default
@@ -72,7 +42,7 @@ workflows:
       - name: Flutter build ipa and automatic versioning
         script: |
           flutter build ipa --release \
-          --build-name=1.0.0 \
+          --build-name=2.0.3 \
           --build-number=$(($(app-store-connect get-latest-testflight-build-number "$APP_STORE_ID") + 1)) \
           --export-options-plist=/Users/builder/export_options.plist
     artifacts:
