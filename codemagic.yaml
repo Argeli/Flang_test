@@ -46,7 +46,7 @@ workflows:
          -----END RSA PRIVATE KEY-----
          
 
-        BUNDLE_ID: "app.cruzeirocolorico.com"
+        BUNDLE_ID: "com.cruzeirocolorido.app"
       flutter: stable
       xcode: latest
       cocoapods: default
@@ -72,7 +72,7 @@ workflows:
       - name: Flutter build ipa and automatic versioning
         script: |
           flutter build ipa --release \
-          --build-name=1.0.0 \
+          --build-name=2.0.1 \
           --build-number=$(($(app-store-connect get-latest-testflight-build-number "$APP_STORE_ID") + 1)) \
           --export-options-plist=/Users/builder/export_options.plist
     artifacts:
