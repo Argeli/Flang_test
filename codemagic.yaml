@@ -46,7 +46,7 @@ workflows:
          -----END RSA PRIVATE KEY-----
          
 
-        BUNDLE_ID: "app.cruzeirocolorico.com"
+        BUNDLE_ID: "app.cruzeirocolorido.com"
       flutter: stable
       xcode: latest
       cocoapods: default
