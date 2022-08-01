@@ -58,9 +58,6 @@
     <true/>
     <key>UIFileSharingEnabled</key>
     <true/>
-    
-    
-    
     <key>LSApplicationQueriesSchemes</key>
     <array>
       <string>https</string>
